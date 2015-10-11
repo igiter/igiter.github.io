@@ -1,6 +1,42 @@
-baseurl:
+permalink: /:year/:month/:day/:title.html
+paginate: 10
 markdown: redcarpet
-safe: false
-pygments: true
-excerpt_separator: "\n\n\n"
-paginate: 5
+
+# 作者信息
+author: 
+  name: Yiding Yang
+  email: yangyidingg@gmail.com
+  github: http://github.com/igiter
+
+# 站点信息
+title: fire's blog
+description: for me and for you
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/img/deer3.png
+favicon: /public/img/deer3.png
+
+# google analytics 设置
+#ga:
+#  id: UA-54262064-1 
+#  url: painterlin.com
+
+# disqus 设置
+disqus:
+  shortname: wy
+
+# 主题设置，自动激活某个标签
+active: 生活
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
