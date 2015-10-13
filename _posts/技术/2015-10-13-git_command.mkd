@@ -1,0 +1,32 @@
+---
+layout: post
+title: Git使用入门
+category: 技术
+tags: Git
+---
+
+###  git常用命令
+
+github好早之前就注册了，但是一直没有用起来，之前也零零散散的上传多一些代码，但现在看起来真是一团糟，而且确实没有什么好的代码值得保留下来的，索性全部删除了。
+
+github确实是个挺好的管理代码工具，想着能把这个工具用起来，整理了一些关于github的常见命令，以便之后查询：
+
+- git init          #初始化命令
+- git status     #查看文件属性
+- git  add `<file>`   #添加文件，可以使用例如‘*.md’批量添加文件
+- git commit -m "some thing commit"  #提交文件已经添加的文件，并添加注释
+- git log           #查看提交记录
+- git remote add origin URL.git     #添加远程仓库，如果是新建的仓库，远程需要新建一个与本地名字一样的repo
+- git push -u origin master            #将所有提交过的文件上传到仓库，本地默认分支是master，-u表示让git记住这次的参数，下次上传就可以直接使用git push完成
+- git pull oringin master                #从远程代码仓库下载代码，在本地进行的一切操作最后都需要push才能影响远程仓库
+- git diff HEAD                                #查看文件变化
+- git diff --staged                            #查看已经添加到git但是还没有提交的文件
+- git reset `<file>`                         #将添加到git的文件移除
+- git checkout -- `<file>`              #回退到提交file的状态？？
+- git branch branch.name            #创建新的分支
+- git checkout branch.name        #切换到新分支   
+- git rm `<file>`                            #删除文件
+- git merge branch.name             #将name分支合并至当前分支，例如：在name分支中将部分文件删除后合并，则合并后文件也将会被删除
+- git branch -d branch.name #删除分支
+
+学习整理自[Code School](https://www.codeschool.com/paths/git)
