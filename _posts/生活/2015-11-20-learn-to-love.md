@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开始给你写信
-catagory: 生活
+category: 生活
 tags: 艾特ilovefire
 ---
 To my dear:
